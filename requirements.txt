@@ -1,0 +1,14 @@
+streamlit
+
+numpy
+pandas
+scikit-learn
+imbalanced-learn
+
+xgboost
+optuna
+
+matplotlib
+seaborn
+
+joblib
