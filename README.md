@@ -1,56 +1,38 @@
 # Urinary Tract Infection Classification using Stacking Ensemble Learning
 
-> Undergraduate Thesis Project | Universitas Muhammadiyah Pontianak
+This repository contains the implementation of my undergraduate thesis, developed as an interactive web application using Streamlit for Urinary Tract Infection (UTI) classification based on urinalysis results.
 
-A Streamlit-based web application for predicting **Urinary Tract Infection (UTI)** using a **Stacking Ensemble Learning** model trained on urinalysis data.
+The application predicts whether a patient is likely to have a urinary tract infection using a **Stacking Ensemble Learning** model.
 
----
+## Thesis
 
-## 🇮🇩 Bahasa Indonesia
+**Title**
 
-### Tentang Proyek
+Penerapan Teknik *Stacking Ensemble Learning* untuk Klasifikasi Penyakit Infeksi Saluran Kemih Berdasarkan Hasil Urinalisis
 
-Repositori ini merupakan implementasi dari skripsi berjudul:
+This research applies a stacking ensemble approach by combining multiple machine learning algorithms to improve classification performance on urinalysis data.
 
-> **Penerapan Teknik Stacking Ensemble Learning untuk Klasifikasi Penyakit Infeksi Saluran Kemih Berdasarkan Hasil Urinalisis**
-
-Aplikasi ini dibangun menggunakan **Streamlit** sebagai antarmuka web dan model Machine Learning yang telah dilatih menggunakan teknik **Stacking Ensemble Learning**.
-
-Model memanfaatkan tiga algoritma dasar:
+### Base Models
 
 - Naïve Bayes
 - Random Forest
 - XGBoost
 
-dengan **Logistic Regression** sebagai meta-classifier.
+### Meta Model
 
----
+- Logistic Regression
 
-### Dataset
-
-Dataset berasal dari Kaggle dan berisi hasil pemeriksaan urinalisis pasien.
-
-- Total data: **1,436**
-- Features: **16**
-- Target:
-  - Positive UTI
-  - Negative UTI
-
----
-
-### Hasil Model
+## Model Performance
 
 | Metric | Score |
-|--------|-------|
+|---------|-------|
 | Accuracy | **96.49%** |
 | Precision | **71.43%** |
 | Recall | **62.50%** |
-| F1 Score | **66.67%** |
+| F1-Score | **66.67%** |
 | ROC-AUC | **89.31%** |
 
----
-
-### Teknologi
+## Tech Stack
 
 - Python
 - Streamlit
@@ -58,92 +40,20 @@ Dataset berasal dari Kaggle dan berisi hasil pemeriksaan urinalisis pasien.
 - XGBoost
 - Pandas
 - NumPy
+- Joblib
 
----
+## Dataset
 
-### Menjalankan Aplikasi
-
-Clone repository
-
-```bash
-git clone https://github.com/username/repository-name.git
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Jalankan aplikasi
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 🇺🇸 English
-
-### About
-
-This repository contains the implementation of my undergraduate thesis:
-
-> **Applying Stacking Ensemble Learning for Urinary Tract Infection Classification Based on Urinalysis Results**
-
-The application is developed using **Streamlit** and utilizes a **Stacking Ensemble Learning** model for predicting Urinary Tract Infection (UTI).
-
-The ensemble consists of:
-
-- Naïve Bayes
-- Random Forest
-- XGBoost
-
-with **Logistic Regression** as the meta-classifier.
-
----
-
-### Dataset
-
-The dataset was obtained from Kaggle and contains urinalysis records.
-
-- Total samples: **1,436**
+- Source: Kaggle Urinalysis Dataset
+- Samples: **1,436**
 - Features: **16**
-- Binary classification:
-  - Positive UTI
-  - Negative UTI
 
----
-
-### Model Performance
-
-| Metric | Score |
-|--------|-------|
-| Accuracy | **96.49%** |
-| Precision | **71.43%** |
-| Recall | **62.50%** |
-| F1 Score | **66.67%** |
-| ROC-AUC | **89.31%** |
-
----
-
-### Tech Stack
-
-- Python
-- Streamlit
-- Scikit-learn
-- XGBoost
-- Pandas
-- NumPy
-
----
-
-### Run Locally
+## Running the Application
 
 Clone the repository
 
 ```bash
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/DaffaPratama28/Identifikasi-ISK-StackingEnsembleLearning.git
 ```
 
 Install dependencies
@@ -158,31 +68,28 @@ Run Streamlit
 streamlit run app.py
 ```
 
----
-
-## Project Structure
+## Repository Structure
 
 ```
-.
 ├── app.py
-├── requirements.txt
 ├── model/
 ├── assets/
-├── notebooks/
+├── requirements.txt
 └── README.md
 ```
 
+## About
+
+This project was developed as part of my undergraduate thesis at **Universitas Muhammadiyah Pontianak**.
+
+The purpose of this repository is to demonstrate the implementation of machine learning techniques for educational and research purposes. It is **not intended for clinical diagnosis or medical decision-making**.
+
+## Live Demo
+
+https://identifikasi-isk-stackingensemblelearning-rjowaqwsnghnxmqhrrqr.streamlit.app/
+
 ---
 
-## Author
+## Bahasa Indonesia
 
-**Daffa Pratama**
-
-Bachelor of Informatics Engineering  
-Universitas Muhammadiyah Pontianak
-
----
-
-## Disclaimer
-
-This project was developed for academic purposes as part of an undergraduate thesis. It is intended to demonstrate the application of Machine Learning techniques for educational and research purposes and should not be used as a substitute for professional medical diagnosis.
+Repository ini merupakan implementasi skripsi saya yang membahas penerapan **Stacking Ensemble Learning** untuk klasifikasi penyakit **Infeksi Saluran Kemih (ISK)** berdasarkan hasil urinalisis. Aplikasi dikembangkan menggunakan **Streamlit** sehingga model dapat digunakan melalui antarmuka web yang sederhana. Penelitian ini menggabungkan algoritma **Naïve Bayes, Random Forest, dan XGBoost** dengan **Logistic Regression** sebagai *meta-classifier* untuk meningkatkan performa klasifikasi.
